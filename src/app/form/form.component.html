@@ -1,0 +1,52 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<div>
+  <div class="content">
+
+    <div class="container">
+      <div class="row ">
+
+        <div class="col-md-5">
+          <h2 style="text-align:center"><strong>Payment</strong></h2>
+          <br>
+          <form  [formGroup]="addform" (ngSubmit)="submit()">
+            <label hidden for="id">ID</label>
+            
+              
+            <label for="name">Name</label>
+            <input formControlName="name" id="name" type="text" class="form-control">
+          
+            <label for="email">Email</label>
+              <input formControlName="email" id="email" type="text" class="form-control">    
+              
+              <label for="Phone_Number">Mobile Number</label>
+              <input formControlName="Phone_Number" id="Phone_Number" type="tel" class="form-control">    <br>
+              <label hidden for="ProductId">ID</label>
+          
+              <button class="btn btn-primary"  type="submit" >Submit</button>
+              
+              
+              
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<form [formGroup]="addform" (ngSubmit)="submit()">
+  <div class="form_box">
+  <h1>ORDER</h1>
+ 
+  <input formControlName="Name" type="text"  placeholder="Name"  required class="form-input" >
+  <!-- <span style="color:red"*ngIf="username && username.invalid && username.dirty">required</span> -->
+ 
+  
+  <input formControlName="Email" type="text"  placeholder="Email"  required class="form-input" > 
+ 
+  
+  <input formControlName="Phone_Number" type="text"  placeholder="Phone Number"  required class="form-input" >    <br>
+  
+  <button href="/home" type="submit" class="btn  button-text">Order Now</button> 

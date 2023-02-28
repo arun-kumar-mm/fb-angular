@@ -1,0 +1,17 @@
+<div class="container product_details">
+
+    <div class="prod_block">
+      <h1>{{productData.title}}</h1>
+      <img src="{{productData.thumbnail}}"  class="prod-img">
+    </div>
+    <div class="prod_features">
+      <p><b>Brand : </b>{{productData.brand}}</p>
+      <p><b>Category : </b>{{productData.category}}</p>
+      <p><b>Price: </b>{{productData.price}}</p>
+      <p><b>Discount Percentage : </b>{{productData.discountPercentage}}</p>
+      <p><b>Rating : </b>{{productData.rating}}</p>
+      <p><b class="bold">Description : </b>{{productData.description}}</p>
+      <a [routerLink]="['/form/'+ productData.id]" target="_blank" class="btn  button-text" >Order Now</a>
+    </div>
+    </div>
+    

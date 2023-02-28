@@ -1,0 +1,168 @@
+.read {
+	border: 8px solid rgb(210, 238, 238);
+	background-color: rgb(210, 238, 238);
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 40px;
+	margin-left: 100px;
+}
+
+.center {
+	margin: 30px 70px;
+	width: 50%;
+
+	padding: 10px;
+
+}
+
+#customers {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 90%;
+}
+
+#customers td,
+#customers th {
+	border: 3px solid black;
+	;
+	padding: 8px;
+}
+
+/* #customers tr:nth-child(even){background-color: #b4c7da;;}
+
+#customers tr:hover {background-color: #b4c7da;} */
+
+#customers th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+
+	color: rgb(0, 0, 0);
+}
+
+
+
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+.btn {
+	font-family: 'Kanit', sans-serif;
+}
+
+.btn-success {
+	background-color: #02a1e3;
+	border-color: #02a1e3;
+	color: #fff;
+}
+
+
+
+
+
+
+.product_list {
+	padding: 4rem 0;
+}
+
+
+
+a.link-menu {
+	text-decoration: none;
+	color: #c0aa83;
+}
+
+
+.btn {
+	background: #4122d6;
+	border-radius: 999px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-decoration: none;
+	padding: 12px 25px;
+	margin-top: 19px;
+}
+
+.boxed {
+	background-color: #c0aa83;
+	height: 150px;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+
+
+
+/* 
+.product-sidebar-list{
+	color: #242424;
+}
+
+.product-sidebar-list:hover{
+	color: #c0aa83;
+} */
+
+.prod-title {
+	color: darkslateblue;
+	font-family: 'Kanit', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	margin-top: 2rem;
+}
+
+.prod-desc {
+	font-family: 'Kanit', sans-serif;
+	font-size: 13px;
+}
+
+.price-tag {
+	color: #02a1e3;
+	font-family: 'Kanit', sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.button-text {
+	font-family: 'Kanit', sans-serif;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.product-image {
+	width: 200px;
+	height: 200px;
+	margin-top: 2rem;
+}
+
+
+.product {
+	height: 485px;
+	margin-bottom: 2rem;
+}
+
+.list {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+
+}
+
+h2 {
+	color: #2967a7;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+P {
+	font-size: 18px;
+}
+

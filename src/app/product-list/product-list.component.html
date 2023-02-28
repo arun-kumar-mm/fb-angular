@@ -1,0 +1,39 @@
+
+
+	<!-- <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content=""> -->
+	<!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<section class="product_list">
+		<div class="container">
+			<div class="row list" >
+        <h2>PRODUCT CATALOGUE</h2>
+        <p></p>
+					</div>
+				
+					<div class="row" >
+						<div class="col-sm-3 col-md-6 col-lg-4 " *ngFor=" let productapidata of apidata ">
+							<div class="product ">
+								<div class="products text-center ">
+									<img src="{{productapidata.thumbnail}}" class="product-image">
+									<div class="xx">
+									<h5 class="prod-title"><b>{{productapidata.title}}</b></h5>
+									<p class="prod-desc">{{productapidata.description}}</p>
+									<p class="tags">Price {{productapidata.price}}</p>
+									<a [routerLink]="['/product-details/'+productapidata.id]" target="_blank" class="btn  button-text" >View Details</a>
+								</div>
+							</div>
+						</div>			
+					</div>
+				</div>		
+			</div>
+	</section>
+ 
+
+	
+	
+
+	
