@@ -4,4 +4,5 @@ export class User {
     email!:String;
     Phone_Number!:Number;
     description!:String;
+    ProductId!:Number;
 }

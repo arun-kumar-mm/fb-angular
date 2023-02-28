@@ -11,7 +11,7 @@
       <p><b>Discount Percentage : </b>{{productData.discountPercentage}}</p>
       <p><b>Rating : </b>{{productData.rating}}</p>
       <p><b class="bold">Description : </b>{{productData.description}}</p>
-      <a [routerLink]="['/form']" target="_blank" class="btn btn-success button-text" >Order Now</a>
+      <a [routerLink]="['/form/'+ productData.id]" target="_blank" class="btn  button-text" >Order Now</a>
     </div>
     </div>
     

@@ -1,46 +1,52 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<div class="bg-img">
-<div class="content">
+<div>
+  <div class="content">
 
-<div class="container" >
-  <div class="row ">
-    
-    <div class="col-md-5">
+    <div class="container">
+      <div class="row ">
 
-    
-    
-    
-  <h2 style="text-align:center"><strong>Payment</strong></h2>
-  <br>
-  <form #loginform="ngForm"  (ngSubmit)="submit()" >
+        <div class="col-md-5">
+          <h2 style="text-align:center"><strong>Payment</strong></h2>
+          <br>
+          <form  [formGroup]="addform" (ngSubmit)="submit()">
+            <label hidden for="id">ID</label>
+            
+              
+            <label for="name">Name</label>
+            <input formControlName="name" id="name" type="text" class="form-control">
+          
+            <label for="email">Email</label>
+              <input formControlName="email" id="email" type="text" class="form-control">    
+              
+              <label for="Phone_Number">Mobile Number</label>
+              <input formControlName="Phone_Number" id="Phone_Number" type="tel" class="form-control">    <br>
+              <label hidden for="ProductId">ID</label>
+          
+              <button class="btn btn-primary"  type="submit" >Submit</button>
+              
+              
+              
+          </form>
 
-    <div class="form-group">
-      <label for="name"><p style="font-size:20px;">Name</p></label>
-      <input type="text" class="form-control"  placeholder="" name="name" [(ngModel)]="user.name">
+        </div>
+      </div>
     </div>
+  </div>
+</div> -->
 
-    <div class="form-group">
-        <label for="email"><p style="font-size:20px;">Email</p></label>
-        <input type="email" class="form-control"  placeholder="" name="email" [(ngModel)]="user.email">
-      </div>
 
-      <div class="form-group">
-        <label for="Phone_Number"><p style="font-size:20px;">Phone Number</p></label>
-        <input type="tel" class="form-control"  placeholder="" name="Phone_Number" [(ngModel)]="user.Phone_Number">
-      </div>
-
-      <div class="form-group">
-        <label for="description"><p style="font-size:20px;">description</p></label>
-        <input type="text" class="form-control"  placeholder="" name="description" [(ngModel)]="user.description">
-      </div>
-    <button type="submit" class="btn btn-default" ><b>Submit</b></button>
-  </form>
+<form [formGroup]="addform" (ngSubmit)="submit()">
+  <div class="form_box">
+  <h1>ORDER</h1>
+ 
+  <input formControlName="Name" type="text"  placeholder="Name"  required class="form-input" >
+  <!-- <span style="color:red"*ngIf="username && username.invalid && username.dirty">required</span> -->
+ 
   
-</div>
-</div>
-</div>
-</div>
-</div>
+  <input formControlName="Email" type="text"  placeholder="Email"  required class="form-input" > 
+ 
+  
+  <input formControlName="Phone_Number" type="text"  placeholder="Phone Number"  required class="form-input" >    <br>
+  
+  <button href="/home" type="submit" class="btn  button-text">Order Now</button> 
