@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DummyComponent } from './dummy/dummy.component';
 import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -16,8 +15,9 @@ const routes: Routes = [
   {path: 'product-details/:id', component: ProductDetailsComponent },
   {path: 'form/:id', component: FormComponent },
   {path: 'login', component: LoginComponent },
-  {path: 'register', component: SignupComponent },
-  {path: 'log', component: DummyComponent },
+  {path: 'Signup', component: SignupComponent },
+  
+
 
 ];
 
